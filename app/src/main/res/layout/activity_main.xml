@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="com.example.bde.ip_calculator.MainActivity">
+
+    <EditText
+        android:id="@+id/IP"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:digits="0123456789."
+        android:gravity="center"
+        android:hint="IP"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/Masque"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:digits="0123456789."
+        android:gravity="center"
+        android:hint="Masque"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <Button
+        android:id="@+id/ButtonOK"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_weight="0.2"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/adresseReseau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="info"
+        android:text="TextView"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Adresse réseau :" />
+
+</LinearLayout>
+
